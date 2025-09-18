@@ -2,7 +2,6 @@ body {
   font-family: 'Poppins', sans-serif;
 }
 
-
 .navbar {
   background-color: #561c24;
   transition: all 0.3s ease-in-out;
@@ -128,11 +127,24 @@ section {
   letter-spacing: 1px;
 }
 
-
 #projects {
-    background-color: #C2C6b9;
-    color: #222;
+  background-color: #c2c6b9;
 }
+
+.project-card {
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+}
+  .project-card:hover {
+  transform: translateY(-10px);
+  box-shadow: 0 15px 30px rgba(0,0,0,0.2);
+}
+.project-card img {
+  height: 200px;
+  object-fit: cover;
+  border-top-left-radius: .5rem;
+  border-top-right-radius: .5rem;
+}
+
 #contact {
     background-color: #844f59;
     color: white;
@@ -200,13 +212,52 @@ section {
   font-size: 1.1em;
   font-weight: 600;
 }
+
 .p {
   font-size: 0.85em;
   color: white;
 }
+
 .p p {
   margin-top: 0.5em;
   padding: 0.5em;
   background-color: #0003;
   border-radius: 1em;
 }
+
+ .skill-card {
+    transition: transform 0.3s ease, box-shadow 0.3s ease;
+    background: rgba(255, 255, 255, 0.05);
+  }
+
+  .skill-card:hover {
+    transform: translateY(-10px) scale(1.05);
+    box-shadow: 0 10px 25px rgba(0, 0, 0, 0.5), 0 0 15px rgba(0, 255, 255, 0.4);
+  }
+
+    .contact-btn {
+    color: white;
+    transition: all 0.3s ease-in-out;
+    border-radius: 8px;
+  }
+
+  .email-btn {
+    background-color: #D44638;
+  }
+  .email-btn:hover {
+    background-color: #b63a2f;
+  }
+
+  .linkedin-btn {
+    background-color: #0A66C2;
+  }
+  .linkedin-btn:hover {
+    background-color: #084d94;
+  }
+
+  .github-btn {
+    background-color: #171515;
+  }
+  .github-btn:hover {
+    background-color: #000;
+  }
